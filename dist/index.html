@@ -7,46 +7,50 @@
     <title>Geekster</title>
 </head>
 <body>
-    <nav class="px-5 py-5 w-full flex justify-between items-center">
-        <div class="w-10/12 flex items-center gap-4">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <nav class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white bg-green-500 p-2  rounded-full" viewBox="0 0 24 24">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
                 <span class="ml-3 text-xl">Geekster</span>
-                </a>
-
-                <span class="text-gray-600 font-extralight text-xl">|</span>
+            </a>
                 
-                <a class="text-gray-600 hover:text-black" href="">Home</a>
+            <div class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center gap-5">
+                <a class=" text-gray-600 hover:text-black" href="">Home</a>
                 <a class="text-gray-600 hover:text-black" href="">About Us</a>
                 <a class="text-gray-600 hover:text-black" href="">Contact Us</a>
                 <a class="text-gray-600 hover:text-black" href="">Map</a>
+            </div>
+            
+            <div class="">
+                <a class="text-gray-600 " href=""><button class="px-4 py-2 bg-gray-100 rounded-md hover:bg-gray-200">Geek <i class="fa-solid fa-arrow-right fa-xs"></i></button></a>
+            </div>
         </div>
 
-        <div class="">
-            <a class="text-gray-600 " href=""><button class="px-4 py-2 bg-gray-100 rounded-md hover:bg-gray-200">Geek <i class="fa-solid fa-arrow-right fa-xs"></i></i></button></a>
-        </div>
+        
     </nav>
 
-    <main class="flex items-center py-24 px-6">
-        <div class="flex-col gap-4 items-center">
-            <h1 class="text-4xl font-semibold w-6/12 py-6">
-                Before they sold out
-                readymade gluten
-            </h1>
-            <p class="text-gray-600 w-10/12 pb-6 leading-6">
-                Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
-            </p>
-
-            <ul class="flex gap-4 text-xl">
-                <li><button class="px-6 py-2 text-white  bg-green-500 rounded hover:bg-blue-700">Yes</button></li>
-                <li><button class="px-6 py-2 text-gray-600 bg-gray-100 rounded hover:bg-gray-200">No</button></li>
-            </ul>
-        </div>
-
-        <div >
-            <img class="rounded-md" src="../src/photo-1571902943202-507ec2618e8f.avif" alt="">
+    <main class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="sm:text-4xl text-3xl mb-4 font-medium text-gray-900 md:w-7/12">
+                    Before they sold out
+                    readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">
+                    Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+                </p>
+    
+                <ul class="flex justify-center">
+                    <li><button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Yes</button></li>
+                    <li><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">No</button></li>
+                </ul>
+            </div>
+    
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" src="../src/photo-1571902943202-507ec2618e8f.avif" alt="">
+            </div>
         </div>
     </main>
 
